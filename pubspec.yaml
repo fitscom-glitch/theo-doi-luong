@@ -39,3 +39,5 @@ flutter:
   assets:
     - assets/fonts/LiberationSans-Regular.ttf
     - assets/fonts/LiberationSans-Bold.ttf
+dependency_overrides:
+  shared_preferences_android: 2.4.28
