@@ -1,0 +1,41 @@
+name: theo_doi_luong
+description: Ứng dụng chấm công và ước tính lương (giờ thường, OT, ngày lễ), xuất CSV, Excel, PDF.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Lưu trữ
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  path_provider: ^2.1.5
+  shared_preferences: ^2.5.3
+
+  # Định dạng ngày, số
+  intl: ^0.20.2
+
+  # Xuất và chia sẻ file
+  excel: ^4.0.6
+  pdf: ^3.11.3
+  # Mã nguồn dùng Share.shareXFiles (API của share_plus 10.x).
+  # Nếu nâng lên share_plus 11 trở lên, đổi sang SharePlus.instance.share(ShareParams(...)).
+  share_plus: ^10.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Font dùng để tạo PDF offline (có đủ chữ tiếng Việt).
+  assets:
+    - assets/fonts/LiberationSans-Regular.ttf
+    - assets/fonts/LiberationSans-Bold.ttf
