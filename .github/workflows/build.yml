@@ -45,5 +45,3 @@ jobs:
           name: theo-doi-luong-apk
           path: app/build/app/outputs/flutter-apk/app-release.apk
           
-dependency_overrides:
-  shared_preferences_android: 2.4.28
